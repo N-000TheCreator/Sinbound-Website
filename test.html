@@ -3,111 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <title>Sinbound Rulebook</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f5f0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #2e1f0f;
+    }
+
+    h2 {
+      color: #5a3623;
+      margin-top: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    strong {
+      color: #2e1f0f;
+    }
+
+    em {
+      color: #555;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Sinbound Rulebook (First Edition)</h1>
+  <div class="container">
+    <h1>Sinbound Rulebook (First Edition)</h1>
 
-  <h2>1. Game Overview</h2>
-  <p><strong>Sinbound</strong> is a 1–4 player strategic card game set in the gothic world of the <strong>Hellskein</strong>, where players wield power through ancient sins, twisted thralls, and broken pacts. The game revolves around managing different types of Sin as resources while reducing the opponent’s <strong>Leader</strong> to 0 HP.</p>
+    <h2>1. Game Overview</h2>
+    <p><strong>Sinbound</strong> is a 1–4 player strategic card game set in the gothic world of the <strong>Hellskein</strong>, where players wield power through ancient sins, twisted thralls, and broken pacts. The game revolves around managing different types of Sin as resources while reducing the opponent’s <strong>Leader</strong> to 0 HP.</p>
 
-  <h2>2. Objective</h2>
-  <p>Reduce your opponent’s <strong>Leader</strong> to 0 HP.</p>
+    <h2>2. Objective</h2>
+    <p>Reduce your opponent’s <strong>Leader</strong> to 0 HP.</p>
 
-  <h2>3. Setup</h2>
-  <ul>
-    <li>Each <strong>Leader</strong> starts on the battlefield with <strong>50 HP</strong> in a <strong>Dormant</strong> state.</li>
-    <li>Each player builds a deck of <strong>exactly 60 cards</strong>.</li>
-    <li>Decks may optionally include a <strong>Sin Pact</strong>.</li>
-    <li>Each player draws <strong>5 cards</strong> to start.</li>
-    <li>Each player chooses a <strong>Leader</strong>, which begins Dormant.</li>
-    <li>Randomly determine who goes first.</li>
-  </ul>
+    <h2>3. Setup</h2>
+    <ul>
+      <li>Each <strong>Leader</strong> starts on the battlefield with <strong>50 HP</strong> in a <strong>Dormant</strong> state.</li>
+      <li>Each player builds a deck of <strong>exactly 60 cards</strong>.</li>
+      <li>Decks may optionally include a <strong>Sin Pact</strong>.</li>
+      <li>Each player draws <strong>5 cards</strong> to start.</li>
+      <li>Each player chooses a <strong>Leader</strong>, which begins Dormant.</li>
+      <li>Randomly determine who goes first.</li>
+    </ul>
 
-  <h2>4. Card Types</h2>
-  <ul>
-    <li><strong>Thralls</strong> – Minions used to attack, defend, and generate Sin.</li>
-    <li><strong>Spells</strong> – One-time effects that change the game state.</li>
-    <li><strong>Rituals</strong> – Expensive, powerful effects paid for with Sin.</li>
-    <li><strong>Relics</strong> – Permanent cards that grant effects.</li>
-    <li><strong>Leaders</strong> – Begin on the battlefield Dormant. Each has HP, ATK, and a passive ability.</li>
-  </ul>
+    <h2>4. Card Types</h2>
+    <ul>
+      <li><strong>Thralls</strong> – Minions used to attack, defend, and generate Sin.</li>
+      <li><strong>Spells</strong> – One-time effects that change the game state.</li>
+      <li><strong>Rituals</strong> – Expensive, powerful effects paid for with Sin.</li>
+      <li><strong>Relics</strong> – Permanent cards that grant effects.</li>
+      <li><strong>Leaders</strong> – Begin on the battlefield Dormant. Each has HP, ATK, and a passive ability.</li>
+    </ul>
 
-  <h2>5. Resources</h2>
-  <p><strong>Sin</strong> is the game’s core resource. There are 7 types: <em>Greed, Wrath, Lust, Envy, Sloth, Gluttony, and Pride</em>, plus <strong>Generic Sin</strong>.</p>
-  <p><strong>Sin Engines:</strong></p>
-  <ul>
-    <li>At the start of each turn, each player creates 1 Generic Sin Engine.</li>
-    <li>Each Sin Engine generates 1 Sin of its type at the start of its controller's turn.</li>
-  </ul>
+    <h2>5. Resources</h2>
+    <p><strong>Sin</strong> is the game’s core resource. There are 7 types: <em>Greed, Wrath, Lust, Envy, Sloth, Gluttony, and Pride</em>, plus <strong>Generic Sin</strong>.</p>
+    <p><strong>Sin Engines:</strong></p>
+    <ul>
+      <li>At the start of each turn, each player creates 1 Generic Sin Engine.</li>
+      <li>Each Sin Engine generates 1 Sin of its type at the start of its controller's turn.</li>
+    </ul>
 
-  <h2>6. Turn Structure</h2>
-  <h3>Start of Turn</h3>
-  <ul>
-    <li>Create 1 Generic Sin Engine.</li>
-    <li>All Sin Engines generate Sin.</li>
-  </ul>
-  <h3>Main Phase</h3>
-  <ul>
-    <li>Play cards by paying their Sin costs.</li>
-    <li>Activate abilities.</li>
-    <li>Bind cards.</li>
-    <li>Attack with Thralls (Thralls cannot attack the turn they enter unless stated).</li>
-  </ul>
-  <h3>End Phase</h3>
-  <ul>
-    <li>Discard down to 7 cards.</li>
-    <li>Resolve end of turn effects.</li>
-  </ul>
+    <h2>6. Turn Structure</h2>
+    <h3>Start of Turn</h3>
+    <ul>
+      <li>Create 1 Generic Sin Engine.</li>
+      <li>All Sin Engines generate Sin.</li>
+    </ul>
+    <h3>Main Phase</h3>
+    <ul>
+      <li>Play cards by paying their Sin costs.</li>
+      <li>Activate abilities.</li>
+      <li>Bind cards.</li>
+      <li>Attack with Thralls (Thralls cannot attack the turn they enter unless stated).</li>
+    </ul>
+    <h3>End Phase</h3>
+    <ul>
+      <li>Discard down to 7 cards.</li>
+      <li>Resolve end of turn effects.</li>
+    </ul>
 
-  <h2>7. Combat</h2>
-  <ul>
-    <li>Declare attackers.</li>
-    <li>Opponent declares blockers.</li>
-    <li>Damage is dealt simultaneously.</li>
-    <li>Thralls with 0 HP are discarded.</li>
-  </ul>
+    <h2>7. Combat</h2>
+    <ul>
+      <li>Declare attackers.</li>
+      <li>Opponent declares blockers.</li>
+      <li>Damage is dealt simultaneously.</li>
+      <li>Thralls with 0 HP are discarded.</li>
+    </ul>
 
-  <h2>8. Keywords & Terms</h2>
-  <ul>
-    <li><strong>Bind</strong> – Turn a card sideways to show it's used.</li>
-    <li><strong>Abyss / Abyssed</strong> – Cards removed from the game.</li>
-    <li><strong>Sinbound</strong> – Tied to one of the Seven Sins.</li>
-    <li><strong>Sin Engine</strong> – Generates Sin each turn.</li>
-    <li><strong>Pact</strong> – Deckbuilding restriction with a benefit.</li>
-    <li><strong>Generic Sin</strong> – Can be used as any Sin, but not for Sin-specific effects.</li>
-    <li><strong>Dormant</strong> – Leaders start in this state. Cannot attack, block, be targeted, or use passives until awakened.</li>
-  </ul>
+    <h2>8. Keywords & Terms</h2>
+    <ul>
+      <li><strong>Bind</strong> – Turn a card sideways to show it's used.</li>
+      <li><strong>Abyss / Abyssed</strong> – Cards removed from the game.</li>
+      <li><strong>Sinbound</strong> – Tied to one of the Seven Sins.</li>
+      <li><strong>Sin Engine</strong> – Generates Sin each turn.</li>
+      <li><strong>Pact</strong> – Deckbuilding restriction with a benefit.</li>
+      <li><strong>Generic Sin</strong> – Can be used as any Sin, but not for Sin-specific effects.</li>
+      <li><strong>Dormant</strong> – Leaders start in this state. Cannot attack, block, be targeted, or use passives until awakened.</li>
+    </ul>
 
-  <h2>9. Sin Pacts (Optional)</h2>
-  <p>During deckbuilding, players may declare a <strong>Sin Pact</strong>:</p>
-  <ul>
-    <li><strong>Restriction:</strong> Example: Only use cards tied to Gluttony.</li>
-    <li><strong>Boon:</strong> Example: Start with an extra Sin Engine or draw effect.</li>
-  </ul>
+    <h2>9. Sin Pacts (Optional)</h2>
+    <p>During deckbuilding, players may declare a <strong>Sin Pact</strong>:</p>
+    <ul>
+      <li><strong>Restriction:</strong> Example: Only use cards tied to Gluttony.</li>
+      <li><strong>Boon:</strong> Example: Start with an extra Sin Engine or draw effect.</li>
+    </ul>
 
-  <h2>10. Victory & Defeat</h2>
-  <ul>
-    <li>Lose when your <strong>Leader</strong> reaches 0 HP.</li>
-    <li>Lose if you try to draw from an empty deck.</li>
-  </ul>
+    <h2>10. Victory & Defeat</h2>
+    <ul>
+      <li>Lose when your <strong>Leader</strong> reaches 0 HP.</li>
+      <li>Lose if you try to draw from an empty deck.</li>
+    </ul>
 
-  <h2>11. Additional Mechanics</h2>
-  <p>These will appear in future sets:</p>
-  <ul>
-    <li><strong>Corruption</strong> – Gradual transformation of cards.</li>
-    <li><strong>Multi-Sin Rituals</strong> – Expensive and powerful effects.</li>
-    <li><strong>Sinbound Species</strong> – Lore-based mechanics (e.g., angels, fleshweavers).</li>
-  </ul>
+    <h2>11. Additional Mechanics</h2>
+    <p>These will appear in future sets:</p>
+    <ul>
+      <li><strong>Corruption</strong> – Gradual transformation of cards.</li>
+      <li><strong>Multi-Sin Rituals</strong> – Expensive and powerful effects.</li>
+      <li><strong>Sinbound Species</strong> – Lore-based mechanics (e.g., angels, fleshweavers).</li>
+    </ul>
 
-  <h2>Appendix A – Sin Types</h2>
-  <ul>
-    <li><strong>Greed</strong> – Hoarding, gold, dominion.</li>
-    <li><strong>Wrath</strong> – Flame, fury, annihilation.</li>
-    <li><strong>Lust</strong> – Desire, illusion, temptation.</li>
-    <li><strong>Envy</strong> – Theft, mimicry, subversion.</li>
-    <li><strong>Sloth</strong> – Delay, inevitability, rot.</li>
-    <li><strong>Gluttony</strong> – Hunger, waste, bloat.</li>
-    <li><strong>Pride</strong> – Power, control, reflection.</li>
-  </ul>
+    <h2>Appendix A – Sin Types</h2>
+    <ul>
+      <li><strong>Greed</strong> – Hoarding, gold, dominion.</li>
+      <li><strong>Wrath</strong> – Flame, fury, annihilation.</li>
+      <li><strong>Lust</strong> – Desire, illusion, temptation.</li>
+      <li><strong>Envy</strong> – Theft, mimicry, subversion.</li>
+      <li><strong>Sloth</strong> – Delay, inevitability, rot.</li>
+      <li><strong>Gluttony</strong> – Hunger, waste, bloat.</li>
+      <li><strong>Pride</strong> – Power, control, reflection.</li>
+    </ul>
+  </div>
 </body>
 </html>
