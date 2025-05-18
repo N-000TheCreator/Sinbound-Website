@@ -3,34 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sinbound Lore & Species</title>
+  <title>Sinbound - Official Site</title>
   <style>
     body {
       background-color: #121212;
       color: #f5f5f5;
       font-family: 'Georgia', serif;
       line-height: 1.6;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
+      margin: 0;
+      padding: 0;
     }
 
-    h1 {
-      color: #e22b2b;
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
       text-align: center;
-      font-size: 2.5rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      border-bottom: 2px solid #e22b2b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #e22b2b;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 1.8rem;
+      color: #ffd700;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #e22b2b;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #c92222;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h2 {
       color: #ffd700;
       margin-top: 2rem;
       font-size: 1.5rem;
-    }
-
-    .section {
-      margin-bottom: 3rem;
     }
 
     .species-entry {
@@ -50,6 +89,13 @@
       margin-top: 0.5rem;
     }
 
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+
     a {
       color: #e22b2b;
       text-decoration: underline;
@@ -62,95 +108,108 @@
 </head>
 <body>
 
-  <h1>Sinbound Lore</h1>
+  <header>
+    <h1>Sinbound</h1>
+  </header>
 
-  <div class="section">
-    <h2>Chapter I: The One Who Watched</h2>
-    <p>Before there was Sin, there was the Serathiel. He was not born but assigned, not named but numbered. N.-000, the Seamless One. His was the burden of observation, not judgment, and he carried it in silence across eons.</p>
-
-    <h2>Chapter II: The Final Hour</h2>
-    <p>N.999, the Final Hour, came not to act but to unmake. It watched time decay, and saw the Seamless One not act. When entropy touched will, the two numbers clashed — not in violence, but in paradox. Their battle left fractures in the firmament.</p>
-
-    <h2>Chapter III: The Unbound Flame</h2>
-    <p>A wanderer rose from ash and oathbreakers — immune to Sin, bound to none. They walk the Hellskein still. Their presence stirs the Sins, and the Seamless One watches once more.</p>
-
-    <h2>Chapter IV: The Sinbound Thirteen</h2>
-    <p>Thirteen figures claimed the power of Sin, each reshaping a domain within the Hellskein. They made pacts with mortals, bred Thralls, and turned engines of guilt into fuel. The Accord holds, but barely.</p>
-
-    <h2>Chapter V: The Hollow Angel</h2>
-    <p>They say Serathiel’s remnants dream. Deep in the Pale Hollow, a pulse grows louder. Some call it hope. Others, relapse.</p>
-
-    <h2>Chapter VI: The Seamless One Stirs</h2>
-    <p>It is said that the Seamless One was once Serathiel. Or perhaps Serathiel was only a mask. Either way, its six arms have begun to move.</p>
+  <div class="intro">
+    <h2>Welcome to the Hellskein</h2>
+    <p>Unravel the lore, confront the Sins, and bind your fate in the infernal world of Sinbound — a trading card game forged in flame, ambition, and guilt.</p>
+    <a href="rulebook.html" class="button">📖 Read the Rulebook</a>
   </div>
 
-  <h1>Species in Hell</h1>
+  <div class="section">
+    <details>
+      <summary>📚 Lore Chapters</summary>
+      <div>
+        <h2>Chapter I: The One Who Watched</h2>
+        <p>Before there was Sin, there was the Serathiel. He was not born but assigned, not named but numbered. N.-000, the Seamless One. His was the burden of observation, not judgment, and he carried it in silence across eons.</p>
+
+        <h2>Chapter II: The Final Hour</h2>
+        <p>N.999, the Final Hour, came not to act but to unmake. It watched time decay, and saw the Seamless One not act. When entropy touched will, the two numbers clashed — not in violence, but in paradox. Their battle left fractures in the firmament.</p>
+
+        <h2>Chapter III: The Unbound Flame</h2>
+        <p>A wanderer rose from ash and oathbreakers — immune to Sin, bound to none. They walk the Hellskein still. Their presence stirs the Sins, and the Seamless One watches once more.</p>
+
+        <h2>Chapter IV: The Sinbound Thirteen</h2>
+        <p>Thirteen figures claimed the power of Sin, each reshaping a domain within the Hellskein. They made pacts with mortals, bred Thralls, and turned engines of guilt into fuel. The Accord holds, but barely.</p>
+
+        <h2>Chapter V: The Hollow Angel</h2>
+        <p>They say Serathiel’s remnants dream. Deep in the Pale Hollow, a pulse grows louder. Some call it hope. Others, relapse.</p>
+
+        <h2>Chapter VI: The Seamless One Stirs</h2>
+        <p>It is said that the Seamless One was once Serathiel. Or perhaps Serathiel was only a mask. Either way, its six arms have begun to move.</p>
+      </div>
+    </details>
+  </div>
 
   <div class="section">
-    <div class="species-entry">
-      <h3>Hollowborn</h3>
-      <p>Hollowborns are the beings of Guilt. Appearing wherever one feels shamed.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Fleshweavers</h3>
-      <p>These flesh-crafters of Gluttony shape matter by hunger and mutation. They fashion living weapons, bloated horrors, and a god that will cleanse all of Hell.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Ashwraiths</h3>
-      <p>Ashwraiths are the souls of those who were wronged in life. When a spirit cannot let go of its pain, it ignites into flame, drifting through Hell as a smoldering ghost.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Brimstone Titans</h3>
-      <p>Brimstone Titans are the oldest living things in Hell. Formed when the plane was still molten, they are walking mountains, crusted with obsidian and magma.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Chitterfiends</h3>
-      <p>Chitterfiends weren’t supposed to exist. They emerged within Scythemite broods, smaller, with faces like carved bone and limbs serrated like meat hooks.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Gravewings</h3>
-      <p>They began as simple carrion beasts, but over time, exposure to cursed winds and the ash of ancient spells awakened a terrible intellect in them.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Ironborns</h3>
-      <p>The Ironborn were not born of Hell — they were made in it. Beings captured were twisted into metal-bodied war machines, fused with blades, armor, and engines of death.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Misery Imps</h3>
-      <p>The Misery Imps were born from the first regrets ever felt in Hell — little ripples of despair that splintered off from damned souls and took shape.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Scornbeasts</h3>
-      <p>Bred in the war pits of Hell’s blood arenas, Scornbeasts were once bestial gladiators. But over centuries of bloodshed, they learned to humiliate before the kill.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Scythemites</h3>
-      <p>The Scythemites are towering insectoid reapers charged with enforcing Hell's laws.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Tariss</h3>
-      <p>Native to the slick obsidian tunnels far below Hell’s molten crust, the Tariss are small hunters. But what they lack in size, they make up for in overwhelming numbers, hyper-coordination, and ambush instincts.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Wyrmreapers</h3>
-      <p>The Wyrmreapers were among the first to crawl through Hell. Ancient dragon-centipede hybrids, they were born from the eruption that first birthed the realm.</p>
-    </div>
-
-    <div class="species-entry">
-      <h3>Ashenborn</h3>
-      <p>Ashenborn are made of smoke, shadow, and memory. They came into existence during the first betrayals in Hell.</p>
-    </div>
+    <details>
+      <summary>👹 Species in Hell</summary>
+      <div>
+        <div class="species-entry">
+          <h3>Hollowborn</h3>
+          <p>Hollowborns are the beings of Guilt. Appearing wherever one feels shamed.</p>
+        </div>
+        <div class="species-entry">
+          <h3>Fleshweavers</h3>
+          <p>These flesh-crafters of Gluttony shape matter by hunger and mutation...</p>
+        </div>
+        <div class="species-entry">
+          <h3>Ashwraiths</h3>
+          <p>Ashwraiths are the souls of those who were wronged in life. When a spirit cannot let go of its pain, it ignites into flame, drifting through Hell as a smoldering ghost.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Brimstone Titans</h3>
+          <p>Brimstone Titans are the oldest living things in Hell. Formed when the plane was still molten, they are walking mountains, crusted with obsidian and magma.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Chitterfiends</h3>
+          <p>Chitterfiends weren’t supposed to exist. They emerged within Scythemite broods, smaller, with faces like carved bone and limbs serrated like meat hooks.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Gravewings</h3>
+          <p>They began as simple carrion beasts, but over time, exposure to cursed winds and the ash of ancient spells awakened a terrible intellect in them.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Ironborns</h3>
+          <p>The Ironborn were not born of Hell — they were made in it. Beings captured were twisted into metal-bodied war machines, fused with blades, armor, and engines of death.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Misery Imps</h3>
+          <p>The Misery Imps were born from the first regrets ever felt in Hell — little ripples of despair that splintered off from damned souls and took shape.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Scornbeasts</h3>
+          <p>Bred in the war pits of Hell’s blood arenas, Scornbeasts were once bestial gladiators. But over centuries of bloodshed, they learned to humiliate before the kill.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Scythemites</h3>
+          <p>The Scythemites are towering insectoid reapers charged with enforcing Hell's laws.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Tariss</h3>
+          <p>Native to the slick obsidian tunnels far below Hell’s molten crust, the Tariss are small hunters. But what they lack in size, they make up for in overwhelming numbers, hyper-coordination, and ambush instincts.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Wyrmreapers</h3>
+          <p>The Wyrmreapers were among the first to crawl through Hell. Ancient dragon-centipede hybrids, they were born from the eruption that first birthed the realm.</p>
+        </div>
+    
+        <div class="species-entry">
+          <h3>Ashenborn</h3>
+          <p>Ashenborn are made of smoke, shadow, and memory. They came into existence during the first betrayals in Hell.</p>
+      </div>
+    </details>
   </div>
 
 </body>
